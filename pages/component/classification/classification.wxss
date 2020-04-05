@@ -1,0 +1,65 @@
+.scroll-List{
+  width: 20%;
+  position: fixed;
+  height: 90%;
+}
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
+.List_title{
+  height: 80rpx;
+  background: #f8f8f8;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 27rpx;
+  font-weight: 600;
+}
+.active{
+  color: red;
+}
+.List_content{
+  position: absolute;
+  top: 0;
+  left: 150rpx;
+  width: 80%;
+  padding: 14rpx;
+  box-sizing: border-box;
+  overflow: hidden
+}
+.List_content .Popular_classification_title{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.Popular_classification_title .text{
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.Popular_classification_title .Ranking_List{
+  font-size: 26rpx;
+  color: #848689;
+}
+.taber_List{
+  width: 100%;
+  margin-top: 20rpx;
+  height: 914rpx;
+}
+.taber_individual{
+  width: 33%;
+  padding: 10rpx;
+  box-sizing: border-box;
+  float: left;
+}
+.taber_individual image{
+  width: 100%;
+  height: 170rpx;
+}
+.taber_individual .text{
+  font-size: 26rpx;
+  text-align: center;
+}

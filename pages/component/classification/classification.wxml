@@ -1,0 +1,3789 @@
+<!--pages/component/classification/classification.wxml-->
+<view>
+  <scroll-view scroll-y class="scroll-List">
+  <view wx:for="{{list}}" wx:key="property">
+    <view class="List_title {{ClickIndex === index ? 'active' : ''}}" bindtap="clickactive" data-Indexkey="{{index}}">{{item}}</view>
+  </view>
+  </scroll-view>
+</view>
+
+<view wx:if="{{ClickIndex === 0}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 1}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 2}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 3}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 4}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 5}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 6}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 7}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 8}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 9}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 10}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 11}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 12}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 13}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 14}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 15}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 16}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 17}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 18}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 19}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 20}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 21}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 22}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 23}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 24}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 25}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 26}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 27}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 28}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 29}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 30}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 31}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 32}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 33}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 34}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 35}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 36}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 37}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 38}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门分类</view>
+        <view class="Ranking_List">排行榜></view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/immune.jpg"></image>
+          <view class="text">调节免疫</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/books.jpg"></image>
+          <view class="text">警官励志</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/projector.jpg"></image>
+          <view class="text">投影机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gameji.jpg"></image>
+          <view class="text">游戏机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/bactericidalfluid.jpg"></image>
+          <view class="text">除菌液</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">家电热搜</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/IM.png"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/totalmobilephone.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/gamephone.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/portablebattery.jpg"></image>
+          <view class="text">充电宝</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/Thethermoteter.jpg"></image>
+          <view class="text">体温计</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/traditionalchinesemedicinehealthcare.jpg"></image>
+          <view class="text">中医保健</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ClickIndex === 39}}">
+  <view class="List_content">
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">热门品牌</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/XIM.png"></image>
+          <view class="text">小米</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/HW.jpg"></image>
+          <view class="text">华为</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/RY.jpg"></image>
+          <view class="text">荣耀</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/PG.jpg"></image>
+          <view class="text">苹果</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/VIVO.png"></image>
+          <view class="text">vivo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/OPPO.png"></image>
+          <view class="text">oppo</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/MZ.jpg"></image>
+          <view class="text">魅族</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/3X.png"></image>
+          <view class="text">三星</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/1J.jpg"></image>
+          <view class="text">一加</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/360.jpg"></image>
+          <view class="text">360手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/CJ.jpg"></image>
+          <view class="text">锤子</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/NBY.jpg"></image>
+          <view class="text">努比亚</view>
+        </view>
+      </view>
+    </view>
+    <view class="Popular_classification_box">
+      <view class="Popular_classification_title">
+        <view class="text">手机通讯</view>
+      </view>
+      <view class="taber_List">
+        <view class="taber_individual">
+          <image src="/pages/image/S1.jpg"></image>
+          <view class="text">老人机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S2.jpg"></image>
+          <view class="text">手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S3.jpg"></image>
+          <view class="text">全面屏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S4.jpg"></image>
+          <view class="text">游戏手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S5.jpg"></image>
+          <view class="text">拍照手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S6.jpg"></image>
+          <view class="text">对讲机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S7.jpg"></image>
+          <view class="text">京东回收</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S8.jpg"></image>
+          <view class="text">女性手机</view>
+        </view>
+        <view class="taber_individual">
+          <image src="/pages/image/S9.jpg"></image>
+          <view class="text">京东维修</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

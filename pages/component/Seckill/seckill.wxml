@@ -1,0 +1,17 @@
+<!-- 京东秒杀 -->
+<view class="Seckill_box">
+  <view class="text">京东秒杀</view>
+  <view class="more">更多好货限时疯抢></view>
+</view>
+<!-- 秒杀list -->
+<view class="Seckill_list">
+  <scroll-view scroll-x="true" class="scroll_view">
+    <view class="SeckllList-box" wx:for="{{SeckillList}}" wx:key="index">
+      <image class="Image" src="{{item.SeckillImage}}"></image>
+      <view class="SeckllList-title">
+        <view class="Discount">{{item.Discount}}</view>
+        <view class="Price">{{item.Price}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,26 @@
+<!-- <scroll-view scroll-y> -->
+  <view class="List">
+    <view class="List_box">
+      <view class="List-box_minbox" wx:for="{{List}}" wx:key="index" bindtap="clicklist" data-itemid="{{item.id}}" data-itemtype="{{item.type}}" data-itemurl="{{item.url}}">
+        <view wx:if="{{item.type === 1}}">
+          <view class="commodity_img">
+            <image src="{{item.image}}"></image>
+          </view>
+          <view class="commodity_title">
+            {{item.title}}
+          </view>
+          <view class="commodity_Price">
+            <text class="price">￥{{item.price}}</text>
+            <text class="text">看相似</text>
+          </view>
+        </view>
+        <view wx:else>
+          <view class="box_img">
+            <image src="{{item.image}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+<!-- </scroll-view> -->
+

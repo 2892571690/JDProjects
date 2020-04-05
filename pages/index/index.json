@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "component_home":"/pages/component/home/home",
+    "component_classification": "/pages/component/classification/classification",
+    "component_car": "/pages/component/car/car",
+    "component_find": "/pages/component/find/find",
+    "component_my": "/pages/component/my/my",
+    "van-icon":"/miniprogram_npm/vant-weapp/icon/index"
+  }
+}

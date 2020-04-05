@@ -1,0 +1,46 @@
+.Seckill_box{
+  width: 100%;
+  height: 50rpx;
+  background: #f6f6f6;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.Seckill_box .text{
+  margin-left: 20rpx;
+  color: red;
+}
+.Seckill_box .more{
+  font-size: 20rpx;
+  font-weight: 400;
+  margin-right: 20rpx;
+  color: #ccc;
+}
+.scroll_view{
+  width: 100%;
+  white-space: nowrap;
+}
+.SeckllList-box{
+  width: 130rpx;
+  height: 130rpx;
+  display: inline-block;
+  font-size: 28rpx;
+  text-align: center;
+  margin: 13rpx;
+}
+.SeckllList-box .Image{
+  width: 100%;
+  height: 100%;
+}
+.SeckllList-box .SeckllList-title .Discount{
+  line-height: 39rpx;
+  color: #e93b3d;
+  font-weight: 600;
+}
+.SeckllList-box .SeckllList-title .Price{
+  text-decoration: line-through;
+  font-size: 18rpx;
+  color: #999;
+}

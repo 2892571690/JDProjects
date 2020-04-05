@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view hidden="{{cunindex !== 0}}">
+  <component_home id="componenthome"/>
+</view>
+<view hidden="{{cunindex !== 1}}">
+  <component_classification/>
+</view>
+<view hidden="{{cunindex !== 2}}">
+  <component_find id="componentfind"/>
+</view>
+<view hidden="{{cunindex !== 3}}">
+  <component_car id="componentcar"/>
+</view>
+<view hidden="{{cunindex !== 4}}">
+  <component_my/>
+</view>
+<!-- 下面的tabbar -->
+<view class="tab">
+  <view wx:for="{{items}}" wx:key="prototype" wx:for-index="index" wx:for-item="item" class="icons  {{cunindex == index ? 'click' : 'default' }}" bindtap="active" data-index="{{index}}">
+    <view class="{{item.icon}} icon"></view>
+    <view class="text">{{item.text}}</view>
+  </view>
+</view>
+<!-- 回顶部按钮 -->
+<view wx:if="{{judge}}">
+  <view class="top" bindtap="totop">
+    <van-icon name="arrow-up" />
+  </view>
+</view>

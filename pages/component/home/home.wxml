@@ -1,0 +1,247 @@
+<!--pages/component/home/home.wxml-->
+<view class="head_box">
+  <!-- 头部搜索 -->
+  <WholeHead/>
+  <!-- 热搜 -->
+  <view class="HotSearch_box">
+    <view class="Hotsearch" style="color:#fff;">热搜</view>
+    <view wx:for="{{Hotsearch}}" wx:key="index" class="HotSearchText_box">
+      <view class="HotSearchText">{{item}}</view>
+    </view>
+  </view>
+</view>
+<!-- 轮播 -->
+<swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='2000' duration='1000' circular='true' >
+  <view wx:for="{{ImgUrl}}" wx:for-index="index" wx:key="index">
+    <swiper-item>
+      <image src='{{item.imageUrl}}' class='u-img-slide' mode='aspectFill'></image>
+    </swiper-item>
+  </view>
+</swiper>
+<!-- 列表轮播 -->
+<view class="List-box">
+  <scroll-view scroll-x="true" class="scrollview">
+      <view class="List_left">
+          <view wx:for="{{listone}}" wx:key="index" class="List">
+              <image src="{{item.image}}" class="ListImage"></image>
+              <view class="ListTitle">{{item.title}}</view>
+          </view>
+      </view>
+      <view class="List_right">
+        <view wx:for="{{listtwo}}" wx:key="index" class="List">
+            <image src="{{item.image}}" class="ListImage"></image>
+            <view class="ListTitle">{{item.title}}</view>
+        </view>
+      </view>
+  </scroll-view>
+  <view class="sign">></view>
+</view>
+<!-- 图片展示 -->
+<view class="Pic-box">
+  <view class="LeftImg">
+    <image src="/pages/image/left.jpg"></image>
+  </view>
+  <view class="CenterImg">
+    <image src="/pages/image/center.jpg"></image>
+  </view>
+  <view class="RightImg">
+    <image src="/pages/image/right.jpg"></image>
+  </view>
+</view>
+<!-- 京东秒杀 -->
+<seckill/>
+
+<!-- 新人专享 -->
+<view class="NewPeople_box">
+  <image class="NewPeople_box_left" src="/pages/image/newpeople.jpg"></image><image class="NewPeople_box_right" src="/pages/image/newrecruitsexclusive.jpg"></image>
+</view>
+<!-- 4个盒子 -->
+<view class="Four_box">
+  <view class="First_box" style="margin-right:6rpx">
+    <image src="/pages/image/background.jpg" class="img_background" style="border-radius:12rpx 0 0 12rpx"></image>
+      <view class="img_box">
+        <image src="/pages/image/yellowduck.jpg" class="img_position"></image>
+      </view>
+    <view class="Fullreduction">满199减66</view>
+    <view class="title">潮玩好物</view>
+  </view>
+  <view class="Second_box" style="margin-right:6rpx">
+    <image src="/pages/image/background.jpg" class="img_background"></image>
+      <view class="img_box">
+        <image src="/pages/image/householdelectricalappliances.jpg" class="img_position"></image>
+      </view>
+    <view class="Fullreduction" style="left: 48rpx">免费家电</view>
+    <view class="title">智能家电</view>
+  </view>
+  <view class="Third_box" style="margin-right:6rpx">
+    <image src="/pages/image/background.jpg" class="img_background"></image>
+      <view class="img_box">
+        <image src="/pages/image/shoes.jpg" class="img_position"></image>
+      </view>
+    <view class="Fullreduction">满400减100</view>
+    <view class="title">潮流鞋子</view>
+  </view>
+  <view class="Fourth_box">
+    <image src="/pages/image/background.jpg" class="img_background" style="border-radius:0 12rpx 12rpx 0"></image>
+      <view class="img_box">
+        <image src="/pages/image/femalewear.jpg" class="img_position"></image>
+      </view>
+    <view class="Fullreduction">满300减66</view>
+    <view class="title">精美服装</view>
+  </view>
+</view>
+<!-- 东家小院 -->
+<view class="Courtyard">
+  <image src="/pages/image/ourtyard.jpg"></image>
+</view>
+<!-- 东家小院list -->
+<view class="Courtyard_List">
+  <view class="Courtyard_List_Top">
+    <view class="Courtyard_List_Top_Left">
+      <view class="Courtyard_List_Top_Left_titletext">
+        <view class="title">年货到家</view>
+        <view class="text">回家的礼物</view>
+      </view>
+      <view class="Courtyard_List_Top_Left_img">
+        <image class="leftimg" src="/pages/image/alcohol.jpg"></image>
+        <image class="rightimg" src="/pages/image/moutai.jpg"></image>
+      </view>
+    </view>
+    <view class="Courtyard_List_Top_Right">
+      <view class="Courtyard_List_Top_Left_titletext">
+        <view class="title">早春美家</view>
+        <view class="text">早春爱扮加</view>
+      </view>
+      <view class="Courtyard_List_Top_Left_img">
+        <image class="leftimg" src="/pages/image/cushion.jpg"></image>
+        <image class="rightimg" src="/pages/image/sofa.jpg"></image>
+      </view>
+    </view>
+  </view>
+  <view class="Courtyard_List_Bottom">
+    <view class="Courtyard_List_Bottom_one">
+      <view class="Courtyard_List_Bottom_titletext">
+        <view class="title">增高攻略</view>
+        <view class="text">一秒变高</view>
+      </view>
+      <view class="Courtyard_List_Bottom_img">
+        <image src="/pages/image/leathershoes.jpg"></image>
+      </view>
+    </view>
+    <view class="Courtyard_List_Bottom_two">
+       <view class="Courtyard_List_Bottom_titletext">
+        <view class="title">青年音乐</view>
+        <view class="text">音乐爱好者</view>
+      </view>
+      <view class="Courtyard_List_Bottom_img">
+        <image src="/pages/image/drumkit.jpg"></image>
+      </view>
+    </view>
+    <view class="Courtyard_List_Bottom_three">
+       <view class="Courtyard_List_Bottom_titletext">
+        <view class="title">尖货好礼</view>
+        <view class="text">送人必备</view>
+      </view>
+      <view class="Courtyard_List_Bottom_img">
+        <image src="/pages/image/hat.jpg"></image>
+      </view>
+    </view>
+    <view class="Courtyard_List_Bottom_four">
+       <view class="Courtyard_List_Bottom_titletext">
+        <view class="title">摄影之友</view>
+        <view class="text">摄影之友</view>
+      </view>
+      <view class="Courtyard_List_Bottom_img">
+        <image src="/pages/image/camera.jpg"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 每日逛 -->
+<view class="everyday_box">
+  <image src="/pages/image/everday.jpg"></image>
+</view>
+<!-- 每日逛list -->
+<view class="Everyday_Box_List">
+  <view class="Everyday_List">
+    <view class="Everyday_List_box" style="margin:0 2rpx 2rpx 0;border-radius:10rpx 0 0 0">
+      <view class="Everyday_List_titletext">
+        <view class="title">免息星球</view>
+        <view class="text">白条免息购</view>
+      </view>
+      <view class="Everyday_List_img">
+        <image src="/pages/image/Intelligentmobilephone.jpg"></image>
+      </view>
+    </view>
+    <view class="Everyday_List_box" style="margin:0 2rpx 2rpx 0">
+      <view class="Everyday_List_titletext">
+        <view class="title">每日特价</view>
+        <view class="text">9.9狂抢</view>
+      </view>
+      <view class="Everyday_List_img">
+        <image src="/pages/image/nut.jpg"></image>
+      </view>
+    </view>
+    <view class="Everyday_List_box" style="margin:0 2rpx 2rpx 0">
+      <view class="Everyday_List_titletext">
+        <view class="title">品牌闪购</view>
+        <view class="text">汇大牌好价</view>
+      </view>
+      <view class="Everyday_List_img">
+        <image src="/pages/image/toner.jpg"></image>
+      </view>
+    </view>
+    <view class="Everyday_List_box" style="border-radius:0 10rpx 0 0;">
+      <view class="Everyday_List_titletext">
+        <view class="title">京东直播</view>
+        <view class="text">边看边买</view>
+      </view>
+      <view class="Everyday_List_img">
+        <image src="/pages/image/gamebook.jpg"></image>
+      </view>
+    </view>
+    <view class="Everyday_List_box" style="margin:0 2rpx 0 0;border-radius:0 0 0 10rpx">
+      <view class="Everyday_List_titletext">
+        <view class="title">排行榜</view>
+        <view class="text">专属购物指南</view>
+      </view>
+      <view class="Everyday_List_img">
+        <image src="/pages/image/Notebook.jpg"></image>
+      </view>
+    </view>
+    <view class="Everyday_List_box" style="margin:0 2rpx 0 0">
+      <view class="Everyday_List_titletext">
+        <view class="title">拍拍好物</view>
+        <view class="text">值得拥有</view>
+      </view>
+      <view class="Everyday_List_img">
+        <image src="/pages/image/mineralwater.jpg"></image>
+      </view>
+    </view>
+    <view class="Everyday_List_box" style="margin:0 2rpx 0 0">
+      <view class="Everyday_List_titletext">
+        <view class="title">新品首发</view>
+        <view class="text">京东小魔方</view>
+      </view>
+      <view class="Everyday_List_img">
+        <image src="/pages/image/headset.jpg"></image>
+      </view>
+    </view>
+    <view class="Everyday_List_box" style="border-radius:0 0 10rpx 0">
+      <view class="Everyday_List_titletext">
+        <view class="title">发现好物</view>
+        <view class="text">发现品质生活</view>
+      </view>
+      <view class="Everyday_List_img">
+        <image src="/pages/image/washingmachine.jpg"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 播放器 -->
+<van-notice-bar left-icon="volume-o" mode="link" text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。"></van-notice-bar>
+<!-- 为你推荐 -->
+<view class="Recommend">
+  <image src="/pages/image/recommend.png"></image>
+</view>
+<infinitelyzoned id="infinitelyzoned" httpParams="{{httpParams}}"/>

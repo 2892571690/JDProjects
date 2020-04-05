@@ -1,0 +1,7 @@
+{
+  "component":true,
+  "usingComponents": {
+    "seckill": "/pages/component/Seckill/seckill",
+    "Infinitelyzoned":"/pages/component/Infinitelyzoned/infinitelyzoned"
+  }
+}

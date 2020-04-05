@@ -1,0 +1,30 @@
+@import "/pages/icon/stylesheet.wxss";
+.Head{
+  display: flex;
+  height: 99rpx;
+  width: 100%;
+  background: #ea5555;
+}
+.Head .classification{
+  width: 10%;
+  height: 100%;
+  text-align: center;
+}
+.Head .search{
+  width: 80%;
+  height: 100%;
+}
+.Head .farm{
+  width: 10%;
+  height: 100%;
+  text-align: center;
+  line-height: 99rpx;
+  font-size: 27rpx;
+}
+.Head .classification .icon-fenlei{
+  font-size: 37rpx;
+  margin-top: 14rpx;
+}
+.Head .classification .text{
+  font-size: 20rpx;
+}

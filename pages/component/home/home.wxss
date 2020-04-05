@@ -1,0 +1,346 @@
+.u-wrp-bnr {
+  width: 700rpx;
+  height: 200rpx;
+  display: block;
+  position: absolute;
+  top: 175rpx;
+  left: 25rpx;
+  background: #f0f0f0;
+}
+.u-img-slide {
+  width: 100%;
+  height: inherit;
+}
+.head_box{
+  background: #ea5555;
+  height: 281rpx;
+}
+.HotSearch_box{
+  display: flex;
+  width: 100%;
+  height: 60rpx;
+  font-size: 24rpx;
+  justify-content: space-between;
+  
+}
+.HotSearch_box .Hotsearch{
+  line-height: 60rpx;
+  margin-left: 19rpx;
+}
+.HotSearch_box .HotSearchText_box{
+  margin: auto 15rpx
+}
+.HotSearch_box .HotSearchText{
+  width: 108rpx;
+  height: 42rpx;
+  background: #f6f6f6;
+  text-align: center;
+  border-radius: 30rpx;
+  line-height: 42rpx;
+}
+.List-box{
+  width: 100%;
+  height: 300rpx;
+  background: #f6f6f6;
+  margin-top: 94rpx;
+  border-radius: 60rpx;
+  position: relative;
+}
+.scrollview{
+  width: 100%;
+  white-space: nowrap;
+}
+.List_left{
+  width: 100%;
+  height: 300rpx;
+  display: inline-block;
+}
+.List_right{
+  width: 100%;
+  height: 300rpx;
+  display: inline-block;
+}
+.List-box .List{
+  width: 90rpx;
+  height: 90rpx;
+  text-align: center;
+  float: left;
+  margin: 24rpx 30rpx;
+}
+.List-box .List .ListImage{
+  width: 100%;
+  height: 100%;
+}
+.List-box .List .ListTitle{
+  font-size: 20rpx;
+  font-weight: 600;
+}
+.sign{
+  position: absolute;
+  top: 125rpx;
+  right: 0;
+  line-height: 36rpx;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(0,0,0,.1);
+  font-size: 23px;
+}
+.Pic-box{
+  width: 100%;
+  height: 200rpx;
+}
+.Pic-box .LeftImg{
+  float: left;
+  width: 34%;
+  height: 100%;
+}
+.Pic-box .LeftImg image{
+  width: 100%;
+  height: 100%;
+}
+.Pic-box .CenterImg{
+  float: left;
+  width: 33%;
+  height: 100%;
+}
+.Pic-box .CenterImg image{
+  width: 100%;
+  height: 100%;
+}
+.Pic-box .RightImg{
+  float: left;
+  width: 33%;
+  height: 100%;
+}
+.Pic-box .RightImg image{
+  width: 100%;
+  height: 100%;
+}
+
+.NewPeople_box{
+  width: 100%;
+  height: 300rpx;
+  background: #c9f4ff;
+  padding: 15rpx;
+  box-sizing: border-box;
+}
+.NewPeople_box .NewPeople_box_left{
+  width: 50%;
+  height: 100%;
+  border-radius: 30rpx 0 0 30rpx;
+}
+.NewPeople_box .NewPeople_box_right{
+  width: 50%;
+  height: 100%;
+  border-radius: 0 30rpx 30rpx 0;
+  margin-left: -1rpx;
+}
+.Four_box{
+  width: 100%;
+  height: 260rpx;
+  background: #c9f4ff;
+  padding: 11rpx;
+  box-sizing: border-box;
+}
+.First_box,.Second_box,.Third_box,.Fourth_box{
+  width: 24.4%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.Four_box .img_background{
+  width: 100%;
+  height: 100%;
+}
+.Four_box .img_box{
+  width: 127rpx;
+  height: 121rpx;
+  position: absolute;
+  top: 21rpx;
+  left: 27rpx;
+}
+.Four_box .img_box .img_position{
+  width: 100%;
+  height: 100%;
+}
+.Four_box .Fullreduction{
+  position: absolute;
+  bottom: 72rpx;
+  left: 33rpx;
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #fff;
+}
+.Four_box .title{
+  position: absolute;
+  font-size: 30rpx;
+  font-weight: 700;
+  bottom: 18rpx;
+  left: 33rpx;
+  color: #fff;
+}
+.Courtyard{
+  width: 100%;
+  height: 80rpx;
+  background: #c9f4ff;
+}
+.Courtyard image{
+  width: 100%;
+  height: 100%;
+}
+.Courtyard_List{
+  width: 100%;
+  height: 540rpx;
+  background: #c9f4ff;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+.Courtyard_List .Courtyard_List_Top{
+  width: 100%;
+  height: 271rpx;
+  background: #fff;
+  border-radius: 10rpx 10rpx 0 0;
+}
+.Courtyard_List .Courtyard_List_Top .Courtyard_List_Top_Left{
+  width: 50%;
+  float: left;
+  padding: 15rpx;
+  box-sizing: border-box;
+}
+ .Courtyard_List_Top_Left_titletext .title{
+  font-size: 35rpx;
+  font-weight: 600;
+  line-height: 1;
+  color: #56b4fe;
+}
+ .Courtyard_List_Top_Left_titletext .text{
+  font-size: 22rpx;
+  line-height: 33rpx;
+}
+.Courtyard_List_Top_Left_img .leftimg{
+  width: 50%;
+  height: 175rpx;
+  float: left;
+  padding: 5rpx;
+  box-sizing: border-box;
+}
+ .Courtyard_List_Top_Left_img .rightimg{
+  width: 50%;
+  height: 175rpx;
+  float: right;
+  padding: 5rpx;
+  box-sizing: border-box;
+}
+.Courtyard_List .Courtyard_List_Top .Courtyard_List_Top_Right{
+  width: 50%;
+  float: right;
+  padding: 15rpx;
+  box-sizing: border-box;
+}
+.Courtyard_List .Courtyard_List_Bottom{
+  background: #fff;
+  width: 100%;
+  height: 245rpx;
+  border-radius:0 0 10rpx 10rpx;
+}
+.Courtyard_List .Courtyard_List_Bottom .Courtyard_List_Bottom_one{
+  width: 25%;
+  float: left;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+.Courtyard_List_Bottom_titletext .title{
+  font-size: 35rpx;
+  font-weight: 500;
+  line-height: 1;
+}
+.Courtyard_List_Bottom_titletext .text{
+  font-size: 25rpx;
+  font-weight: 300;
+  line-height: 39rpx;
+}
+.Courtyard_List_Bottom_img image{
+  width: 100%;
+  height: 150rpx;
+  padding: 5rpx;
+  box-sizing: border-box;
+}
+.Courtyard_List .Courtyard_List_Bottom .Courtyard_List_Bottom_two{
+  width: 25%;
+  float: left;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+.Courtyard_List .Courtyard_List_Bottom .Courtyard_List_Bottom_three{
+  width: 25%;
+  float: left;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+.Courtyard_List .Courtyard_List_Bottom .Courtyard_List_Bottom_four{
+  width: 25%;
+  float: left;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+.everyday_box{
+  width: 100%;
+  height: 80rpx;
+  background: #c9f4ff;
+}
+.everyday_box image{
+  width: 100%;
+  height: 100%;
+}
+.Everyday_Box_List{
+  width: 100%;
+  height: 630rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+  background: #c9f4ff;
+}
+.Everyday_List{
+  width: 100%;
+  height: 620rpx;
+}
+.Everyday_List_box{
+  width: 24.8%;
+  height: 300rpx;
+  background: pink;
+  padding: 10rpx;
+  box-sizing: border-box;
+  float: left;
+}
+.Everyday_List_titletext{
+  text-align: center;
+  line-height: 42rpx;
+}
+.Everyday_List_titletext .title{
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #FF2A00;
+}
+.Everyday_List_titletext .text{
+  font-size: 24rpx;
+  font-weight: 300;
+}
+.Everyday_List_img image{
+  width: 100%;
+  height: 199rpx;
+  background: #fff;
+}
+.van-notice-bar{
+  width: 100%;
+  height: 200rpx;
+}
+.Recommend{
+  width: 100%;
+  height: 80rpx;
+  background: #c9f4ff;
+}
+.Recommend image{
+  width: 100%;
+  height: 100%;
+}

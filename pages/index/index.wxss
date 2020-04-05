@@ -1,0 +1,40 @@
+/**index.wxss**/
+@import "../icon/stylesheet.wxss";
+.tab{
+  width: 100%;
+  height: 115rpx;
+  background: #c1b9b9;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.tab .icons{
+  width: 18%;
+  text-align: center;
+  margin: auto 0;
+}
+.tab .icons .icon{
+  font-size: 40rpx;
+}
+.tab .icons .text{
+  font-size: 23rpx;
+}
+.click{
+  color: blue;
+}
+.default{
+  color: black;
+}
+.top{
+  width: 100rpx;
+  height: 100rpx;
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  bottom: 250rpx;
+  right: 80rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 110rpx;
+  font-size: 60rpx;
+}

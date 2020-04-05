@@ -1,0 +1,10 @@
+<view class="Head">
+  <view class="classification" style="color:#fff;">
+    <view class="iconfont icon-fenlei"></view>
+    <view class="text">分类</view>
+  </view>
+  <view class="search">
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词" background="#ea5555"/>
+  </view>
+  <view class="farm" style="color:#fff;">农场</view>
+</view>

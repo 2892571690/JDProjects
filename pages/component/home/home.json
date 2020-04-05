@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "WholeHead":"/WholeHead/wholehead",
+    "van-notice-bar":"/miniprogram_npm/vant-weapp/notice-bar/index",
+    "infinitelyzoned":"/pages/component/Infinitelyzoned/infinitelyzoned",
+    "seckill":"/pages/component/Seckill/seckill"
+  }
+}

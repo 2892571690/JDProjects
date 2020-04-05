@@ -1,0 +1,8 @@
+.bannerimg_box{
+  width:100%;
+  height: 300rpx;
+}
+.bannerimg_box image{
+  width: 100%;
+  height: 100%;
+}

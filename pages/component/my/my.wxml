@@ -1,0 +1,22 @@
+<!-- 登陆信息 -->
+<view class="My-User">
+  <image class="My-Head" src="{{headimg}}"></image>
+  <view class="My-Name">{{username}}</view>
+</view>
+<!-- 点击授权信息 -->
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="button-power">授权登录</button>
+<view wx:else>请升级微信版本</view>
+<!-- 地址框 -->
+<view class="cell">
+  <van-cell title="{{place}}" bind:click="showPopup" border="false"/>
+</view>
+<van-popup show="{{ show }}" position="bottom" custom-style="height: 30%;" bind:close="onClose">
+  <van-area area-list="{{ areaList }}" value="110101" bind:confirm="determine"/>
+</van-popup>
+<!-- 时间框 -->
+<view class="cell cell-time" bindtap="celltime">{{landingTime}}</view>
+<view wx:if="{{hidder}}">
+    <van-datetime-picker type="date" value="{{ currentDate }}" min-date="{{ minDate }}" formatter="{{ formatter }}" bind:confirm="times" bind:input="onInput" item-height="30"/>
+</view>
+  
+

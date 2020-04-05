@@ -1,0 +1,4 @@
+<view class="bannerimg_box">
+  <image src="{{Bannerimg}}"></image>
+</view>
+<Infinitelyzoned httpParams="{{httpParams}}" />

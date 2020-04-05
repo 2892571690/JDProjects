@@ -1,0 +1,55 @@
+.List{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.List_box{
+  width: 100%;
+  height: 100%;
+}
+.List-box_minbox{
+  width: 48.6%;
+  float: left;
+  height: 600rpx;
+  background: #fff;
+  margin-top: 20rpx;
+  background: #f9f9f9;
+}
+.List-box_minbox:nth-of-type(2n+1){
+  margin-right: 20rpx;
+}
+.commodity_box{
+  width: 100%;
+}
+.commodity_img image{
+  width: 100%;
+}
+.commodity_title{
+  font-size: 26rpx;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.commodity_Price{
+  margin: 16rpx 0 20rpx 0;
+}
+.commodity_Price .price{
+  color: red;
+}
+.commodity_Price .text{
+  border: 2rpx solid #ccc;
+  float: right;
+  font-size: 28rpx;
+  margin-right: 10rpx;
+}
+.box_img{
+  width: 100%;
+  height: 600rpx;
+}
+.box_img image{
+  width: 100%;
+  height: 100%
+}

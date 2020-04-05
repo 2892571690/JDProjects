@@ -1,0 +1,16 @@
+<!-- 搜索单 -->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" class="vansearch"/>
+<!-- 标题列表 -->
+<view class="fine_List_box">
+  <scroll-view scroll-x="true" class="fine_scrollview">
+    <view wx:for="{{Titlelist}}" class="fortext {{ClickIndex == index ? 'active' : ''}}" wx:key="index" bindtap="clickitem" data-clickindex="{{index}}">
+      <view class="text">{{item}}</view>
+    </view>
+  </scroll-view>
+  <view class="fine_List_right">
+    <van-icon name="arrow-down" />
+  </view>
+</view>
+<view style="margin-top: 150rpx;"></view>
+<!-- 商品列表 -->
+<Infinitelyzoned httpParams="{{httpParams}}" id="findid"/>

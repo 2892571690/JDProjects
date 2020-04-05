@@ -1,0 +1,160 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.2",
+	"appid": "wx02f11257757a52ab",
+	"projectname": "JDProject",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "WholeHead/wholehead",
+					"pathName": "WholeHead/wholehead",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "WholeSwiper/wholeswiper",
+					"pathName": "WholeSwiper/wholeswiper",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "InfinitelyZoned/Infinitelyzoned",
+					"pathName": "InfinitelyZoned/Infinitelyzoned",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/component/Infinitelyzoned/infinitelyzoned",
+					"pathName": "pages/component/Infinitelyzoned/infinitelyzoned",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/component/home/home",
+					"pathName": "pages/component/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/component/classification/classification",
+					"pathName": "pages/component/classification/classification",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/component/car/car",
+					"pathName": "pages/component/car/car",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/component/Seckill/seckill",
+					"pathName": "pages/component/Seckill/seckill",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/component/find/find",
+					"pathName": "pages/component/find/find",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/component/Infinitelyzoned/infinitelyzoned",
+					"pathName": "pages/component/Infinitelyzoned/infinitelyzoned",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/component/Purchasepage/purchasepage",
+					"pathName": "pages/component/Purchasepage/purchasepage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/component/Purchasepage/purchasepage",
+					"pathName": "pages/component/Purchasepage/purchasepage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/component/Morepages/morepages",
+					"pathName": "pages/component/Morepages/morepages",
+					"scene": null
+				}
+			]
+		}
+	}
+}

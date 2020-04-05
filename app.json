@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/component/home/home",
+    "pages/component/classification/classification",
+    "pages/component/car/car",
+    "pages/component/find/find",
+    "pages/component/my/my",
+    "WholeHead/wholehead",
+    "pages/component/Infinitelyzoned/infinitelyzoned",
+    "pages/component/Seckill/seckill",
+    "pages/component/Purchasepage/purchasepage",
+    "pages/component/Morepages/morepages"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ea5555",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white",
+    "onReachBottomDistance": 100
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
