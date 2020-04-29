@@ -51,7 +51,7 @@ Component({
       // let a = e.currentTarget.dataset.itemid
       // console.log(e.currentTarget.dataset.itemurl)
       let a = e.currentTarget.dataset.itemurl
-      let Urlid = a.substring(a.length - 11, a.length - 7)
+      let Urlid = a.substr(-4)
       if (e.currentTarget.dataset.itemtype === 1){
         wx.navigateTo({
           url: '/pages/component/Purchasepage/purchasepage?data1=' + e.currentTarget.dataset.itemid,

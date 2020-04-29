@@ -8,6 +8,8 @@ Page({
     }
   },
   onLoad(option){
+    // console.log(`http://www.xiongmaoyouxuan.com/api/column/${this.data.Urlid}`)
+    console.log(option)
     let httpParamsUrl = "httpParams.url"
     this.setData({
       Urlid: option.dataurlid,
@@ -15,6 +17,7 @@ Page({
     })
   },
   onReady(){
+   
     this.imgbanner()
   },
   imgbanner(){
@@ -23,6 +26,7 @@ Page({
       header: {},
       method: 'GET',
       success: (res) =>{
+        console.log(res)
         this.setData({
           Bannerimg: res.data.data.share.imageUrl
         })
